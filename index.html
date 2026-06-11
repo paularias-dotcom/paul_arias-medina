@@ -1,0 +1,900 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Paúl Arias Medina — Investigador en corrupción, psicometría y migración. Profesor, Universidad de Cuenca. Director del proyecto CIRCLE (VLIR-UOS). PhD candidate, KU Leuven.">
+  <meta name="keywords" content="Paúl Arias Medina, corruption research, psychometrics, CIRCLE project, Universidad de Cuenca, KU Leuven">
+  <meta property="og:title" content="Paúl Arias Medina">
+  <meta property="og:description" content="Researcher in corruption, psychometrics, and migration. Director of CIRCLE (VLIR-UOS). Universidad de Cuenca / KU Leuven.">
+  <title>Paúl Arias Medina</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- Mobile toggle -->
+<button class="mobile-nav-toggle" onclick="toggleSidebar()" aria-label="Abrir menú">
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+</button>
+
+<div class="site-wrapper">
+
+  <!-- ══ SIDEBAR ══ -->
+  <aside class="sidebar">
+
+    <div class="sidebar-photo" aria-label="Foto de perfil">
+      <!-- Replace src with your photo path once uploaded -->
+      <span>PA</span>
+    </div>
+
+    <div>
+      <div class="sidebar-name">Paúl Arias Medina</div>
+      <div class="sidebar-role">
+        Profesor Titular · Facultad de Psicología<br>
+        Universidad de Cuenca<br>
+        PhD candidate · KU Leuven
+      </div>
+    </div>
+
+    <div class="sidebar-links">
+      <a href="mailto:paul.arias@ucuenca.edu.ec">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16v16H4z"/><polyline points="4,4 12,12 20,4"/></svg>
+        paul.arias@ucuenca.edu.ec
+      </a>
+      <a href="https://scholar.google.com/citations?user=BWANPB8AAAAJ&hl=es" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+        Google Scholar
+      </a>
+      <a href="https://www.researchgate.net/profile/Paul-Arias-Medina" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 8v8M8 12h8"/></svg>
+        ResearchGate
+      </a>
+      <a href="https://orcid.org/0000-0002-3255-2614" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="16"/></svg>
+        ORCID 0000-0002-3255-2614
+      </a>
+      <a href="https://investigacion.ucuenca.edu.ec/es/persons/william-paul-arias-medina/publications/" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></svg>
+        UCuenca Research Portal
+      </a>
+    </div>
+
+    <nav class="sidebar-nav" role="navigation">
+      <a href="#" data-section="home" class="active" onclick="showSection('home',this);return false;">
+        <span class="es">Inicio</span><span class="en">Home</span>
+      </a>
+      <a href="#" data-section="research" onclick="showSection('research',this);return false;">
+        <span class="es">Investigación</span><span class="en">Research</span>
+      </a>
+      <a href="#" data-section="publications" onclick="showSection('publications',this);return false;">
+        <span class="es">Publicaciones</span><span class="en">Publications</span>
+      </a>
+      <a href="#" data-section="talks" onclick="showSection('talks',this);return false;">
+        <span class="es">Presentaciones</span><span class="en">Talks</span>
+      </a>
+      <a href="#" data-section="teaching" onclick="showSection('teaching',this);return false;">
+        <span class="es">Docencia</span><span class="en">Teaching</span>
+      </a>
+      <a href="#" data-section="cv" onclick="showSection('cv',this);return false;">CV</a>
+    </nav>
+
+    <div class="lang-toggle">
+      <button data-lang="es" class="active" onclick="setLang('es')">ES</button>
+      <button data-lang="en" onclick="setLang('en')">EN</button>
+    </div>
+
+  </aside>
+
+  <!-- ══ MAIN CONTENT ══ -->
+  <main class="main-content">
+
+    <!-- ── HOME ── -->
+    <section id="home" class="section active">
+
+      <p class="hero-greeting">
+        <span class="es">Investigador · Profesor · Director CIRCLE</span>
+        <span class="en">Researcher · Professor · CIRCLE Director</span>
+      </p>
+
+      <h1 class="hero-name">Paúl Arias Medina</h1>
+
+      <p class="hero-title">
+        <span class="es">Facultad de Psicología, Universidad de Cuenca · KU Leuven (Bélgica)</span>
+        <span class="en">Faculty of Psychology, Universidad de Cuenca · KU Leuven (Belgium)</span>
+      </p>
+
+      <p class="bio-text es">
+        Soy investigador y profesor titular en la Facultad de Psicología de la Universidad de Cuenca, Ecuador. Mi interés principal se centra en la corrupción — cómo la ciudadanía la percibe, justifica, tolera o rechaza — desde perspectivas cognitivas, conductuales y experimentales. También tengo formación y publicaciones en psicometría y medición, y en migración internacional y educación. Dirijo <strong>CIRCLE</strong>, un programa académico de investigación sobre corrupción en Ecuador financiado por VLIR-UOS, en colaboración con KU Leuven y la Universidad de Gante (Bélgica). Soy candidato a PhD en KU Leuven, donde defenderé mi tesis en octubre de 2025.
+      </p>
+      <p class="bio-text en">
+        I am a researcher and professor at the Faculty of Psychology, Universidad de Cuenca, Ecuador. My primary research interest is corruption — how citizens perceive, justify, tolerate or reject corrupt behaviour — approached through cognitive, behavioural and experimental lenses. I also have a background in psychometrics and measurement, and in international migration and education. I direct <strong>CIRCLE</strong>, an academic research programme on corruption in Ecuador funded by VLIR-UOS, in collaboration with KU Leuven and Ghent University (Belgium). I am a PhD candidate at KU Leuven.
+      </p>
+
+      <div class="stats-bar">
+        <div class="stat">
+          <span class="stat-number">322</span>
+          <span class="stat-label es">Citas</span>
+          <span class="stat-label en">Citations</span>
+        </div>
+        <div class="stat">
+          <span class="stat-number">9</span>
+          <span class="stat-label">h-index</span>
+        </div>
+        <div class="stat">
+          <span class="stat-number">9</span>
+          <span class="stat-label">i10-index</span>
+        </div>
+        <div class="stat">
+          <span class="stat-number">23</span>
+          <span class="stat-label es">Publicaciones</span>
+          <span class="stat-label en">Publications</span>
+        </div>
+      </div>
+      <p style="font-size:0.72rem;color:var(--faint);margin-top:-0.5rem;margin-bottom:1.5rem;">
+        <a href="https://scholar.google.com/citations?user=BWANPB8AAAAJ&hl=es" target="_blank" rel="noopener">Google Scholar</a>
+      </p>
+
+      <div class="affil-block">
+        <div class="affil-item">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></svg>
+          <span>
+            <span class="es">Profesor Titular · Facultad de Psicología, Universidad de Cuenca, Ecuador</span>
+            <span class="en">Associate Professor · Faculty of Psychology, Universidad de Cuenca, Ecuador</span>
+          </span>
+        </div>
+        <div class="affil-item">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"/><line x1="2" y1="12" x2="22" y2="12"/></svg>
+          <span>
+            <span class="es">Candidato a PhD · Behavioural Engineering & Economics, KU Leuven, Bélgica</span>
+            <span class="en">PhD Candidate · Behavioural Engineering & Economics, KU Leuven, Belgium</span>
+          </span>
+        </div>
+        <div class="affil-item">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          <span>
+            <span class="es">Director · Proyecto CIRCLE (VLIR-UOS TEAM 2022, 2022–2027)</span>
+            <span class="en">Director · CIRCLE Project (VLIR-UOS TEAM 2022, 2022–2027)</span>
+          </span>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- ── RESEARCH ── -->
+    <section id="research" class="section">
+
+      <h2 class="section-heading">
+        <span class="es">Investigación</span>
+        <span class="en">Research</span>
+      </h2>
+
+      <p class="section-subheading es">Líneas de investigación</p>
+      <p class="section-subheading en">Research streams</p>
+
+      <div class="stream-cards">
+
+        <div class="stream-card primary">
+          <div class="stream-card-title">
+            <span class="es">Corrupción y gobernanza</span>
+            <span class="en">Corruption & Governance</span>
+          </div>
+          <div class="stream-card-subtitle">
+            <span class="es">Línea principal · Proyecto CIRCLE</span>
+            <span class="en">Primary stream · CIRCLE Project</span>
+          </div>
+          <div class="stream-card-desc">
+            <span class="es">Cómo la ciudadanía percibe, justifica, tolera o rechaza los comportamientos corruptos. Investigación con métodos mixtos: estudios cualitativos con teoría fundamentada en Cuenca, Guayaquil y Quito; experimentos de laboratorio y de campo sobre soborno, corrupción judicial y dimensión de género. Incluye el desarrollo de instrumentos psicométricos para la medición de la tolerancia a la corrupción.</span>
+            <span class="en">How citizens perceive, justify, tolerate or reject corrupt behaviour. Mixed-methods research: qualitative grounded-theory fieldwork in Cuenca, Guayaquil and Quito; laboratory and field experiments on bribery, judicial corruption, and the gender dimension of corruption. Includes development of psychometric instruments for measuring corruption tolerance.</span>
+          </div>
+        </div>
+
+        <div class="stream-card secondary">
+          <div class="stream-card-title">
+            <span class="es">Psicometría y medición</span>
+            <span class="en">Psychometrics & Measurement</span>
+          </div>
+          <div class="stream-card-subtitle">
+            <span class="es">Validación de instrumentos en el contexto ecuatoriano</span>
+            <span class="en">Instrument validation in the Ecuadorian context</span>
+          </div>
+          <div class="stream-card-desc">
+            <span class="es">Adaptación y validación de escalas psicológicas en Ecuador: estructura factorial, invarianza de medición, fiabilidad y validez. Modelos de ecuaciones estructurales (SEM). Escalas de bienestar, calidad de vida, salud mental, resiliencia, autoestima, funcionamiento ejecutivo, entre otras.</span>
+            <span class="en">Adaptation and validation of psychological scales in Ecuador: factor structure, measurement invariance, reliability and validity. Structural equation modelling (SEM). Scales covering wellbeing, quality of life, mental health, resilience, self-esteem, executive functioning, and others.</span>
+          </div>
+        </div>
+
+        <div class="stream-card tertiary">
+          <div class="stream-card-title">
+            <span class="es">Migración y educación</span>
+            <span class="en">Migration & Education</span>
+          </div>
+          <div class="stream-card-subtitle">
+            <span class="es">Aspiraciones educativas y familias transnacionales</span>
+            <span class="en">Educational aspirations and transnational families</span>
+          </div>
+          <div class="stream-card-desc">
+            <span class="es">Cómo la migración internacional moldea las aspiraciones y expectativas educativas de niños y adolescentes en Ecuador. Investigación con métodos mixtos: encuestas multinivel y entrevistas semiestructuradas. Aplicaciones de regresión logística y análisis temático.</span>
+            <span class="en">How international migration shapes the educational aspirations and expectations of children and adolescents in Ecuador. Mixed methods: multi-level surveys and semi-structured interviews. Applications of logistic regression and thematic analysis.</span>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- CIRCLE featured -->
+      <p class="section-subheading">CIRCLE</p>
+
+      <div class="circle-block">
+        <div class="circle-header">
+          <div>
+            <div class="circle-title">
+              CIRCLE
+              <span class="es">Comprehensive Investigation on the Rationale of Corruption and its Liabilities in Ecuador</span>
+              <span class="en">Comprehensive Investigation on the Rationale of Corruption and its Liabilities in Ecuador</span>
+            </div>
+          </div>
+          <span class="circle-badge">VLIR-UOS TEAM 2022 · 2022–2027</span>
+        </div>
+
+        <p class="circle-desc es">
+          CIRCLE es un programa académico de investigación con métodos mixtos sobre la corrupción en el Ecuador (presupuesto total ≈ €300,000). Se pregunta cómo la ciudadanía percibe, justifica, tolera o rechaza los comportamientos corruptos. El programa fortalece la investigación en dos universidades ecuatorianas, forma a dos doctorandos en Flandes y se alinea con el <strong>ODS 16.5</strong>. El ICRN Forum 2027, en cuya organización participará CIRCLE, llevará este trabajo ante un público académico internacional.
+        </p>
+        <p class="circle-desc en">
+          CIRCLE is an academic mixed-methods research programme on corruption in Ecuador (total budget ≈ €300,000). It asks how citizens perceive, justify, tolerate or reject corrupt behaviour. The programme strengthens research capacity at two Ecuadorian universities, trains two doctoral candidates in Flanders, and aligns with <strong>SDG 16.5</strong>. The ICRN Forum 2027, which CIRCLE will help host in Ecuador, will bring this work to an international research audience.
+        </p>
+
+        <div class="circle-lines">
+          <div class="circle-line">
+            <strong class="es">Conceptualización y discurso público</strong>
+            <strong class="en">Conceptualisation & public discourse</strong>
+            <span class="es"> — estudios cualitativos, etnográficos y de métodos mixtos sobre cómo la ciudadanía entiende la corrupción.</span>
+            <span class="en"> — qualitative, ethnographic and mixed-methods studies of how citizens understand corruption.</span>
+          </div>
+          <div class="circle-line">
+            <strong class="es">Fundamentos teóricos y de medición</strong>
+            <strong class="en">Theoretical & measurement foundations</strong>
+            <span class="es"> — marcos cognitivos, normativo-culturales y conductuales; instrumento psicométrico de tolerancia a la corrupción asistido por IA.</span>
+            <span class="en"> — cognitive, cultural-normative and behavioural frameworks; AI-assisted psychometric instrument for corruption tolerance.</span>
+          </div>
+          <div class="circle-line">
+            <strong class="es">Investigación experimental</strong>
+            <strong class="en">Experimental research</strong>
+            <span class="es"> — experimentos de laboratorio y de campo sobre soborno, corrupción judicial y género.</span>
+            <span class="en"> — laboratory and field experiments on bribery, judicial corruption and gender.</span>
+          </div>
+        </div>
+
+        <div class="circle-partners" style="margin-top:1rem;">
+          <strong class="es">Socios Ecuador:</strong>
+          <strong class="en">Ecuador partners:</strong>
+          <span class="es"> Universidad de Cuenca (líder) · ESPOL Guayaquil · FCD (Transparency International Ecuador) · ODJ (UNCAC Coalition)</span>
+          <span class="en"> Universidad de Cuenca (lead) · ESPOL Guayaquil · FCD (Transparency International Ecuador) · ODJ (UNCAC Coalition)</span>
+          <br>
+          <strong class="es">Socios Bélgica:</strong>
+          <strong class="en">Belgium partners:</strong>
+          <span> KU Leuven (BEE) · Ghent University (IRCP)</span>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- ── PUBLICATIONS ── -->
+    <section id="publications" class="section">
+
+      <h2 class="section-heading">
+        <span class="es">Publicaciones</span>
+        <span class="en">Publications</span>
+      </h2>
+
+      <p style="font-size:0.82rem;color:var(--muted);margin:0.75rem 0 1.5rem;">
+        <span class="es">322 citas · h-index 9 · i10-index 9 (Google Scholar). Mi nombre aparece en <strong>negrita</strong>.</span>
+        <span class="en">322 citations · h-index 9 · i10-index 9 (Google Scholar). My name appears in <strong>bold</strong>.</span>
+      </p>
+
+      <!-- 2025 Forthcoming -->
+      <div class="pub-year-group">
+        <div class="pub-year-label">2025 <span class="es">— En prensa</span><span class="en">— Forthcoming</span></div>
+
+        <div class="pub-item">
+          <span class="pub-title">
+            On the understanding of corruption: online and offline data to provide a fuller picture
+            <span class="badge badge-forthcoming">En prensa / Forthcoming</span>
+          </span>
+          <span class="pub-authors"><span class="pub-me">Arias-Medina, P.</span>, Chapa, T., &amp; Dewitte, S.</span>
+        </div>
+
+        <div class="pub-item">
+          <span class="pub-title">
+            Are Public Service Motivation and Social Value Orientation related to Bribery? Evidence from a developing country
+            <span class="badge badge-forthcoming">En prensa / Forthcoming</span>
+          </span>
+          <span class="pub-authors">Merchán, S., Cali, D., &amp; <span class="pub-me">Arias-Medina, P.</span></span><br>
+          <span class="pub-venue">CIT 2025 Proceedings</span>
+        </div>
+      </div>
+
+      <!-- 2025 Published -->
+      <div class="pub-year-group">
+        <div class="pub-year-label">2025</div>
+
+        <div class="pub-item">
+          <span class="pub-title">Psychometric Properties of the Zung Self-Applied Anxiety Scale</span>
+          <span class="pub-authors">Delgado Quezada, T.L., Peña-Contreras, E., Cali Ramón, D., &amp; <span class="pub-me">Arias-Medina, P.</span></span><br>
+          <span class="pub-venue">Maskana, 16(2), 27–43.</span>
+        </div>
+
+        <div class="pub-item">
+          <span class="pub-title">Psychometric Analysis of the Spanish Version of the Identity Distress Scale in Ecuadorian Emerging Adults</span>
+          <span class="pub-authors">Cordero-Hermida, F., Sacoto, J.D., Sinchi, E., &amp; <span class="pub-me">Arias-Medina, P.</span></span><br>
+          <span class="pub-venue">Psychology in Russia, 17(4), 1–17.</span>
+        </div>
+      </div>
+
+      <!-- 2024 -->
+      <div class="pub-year-group">
+        <div class="pub-year-label">2024</div>
+
+        <div class="pub-item">
+          <span class="pub-title">
+            <a href="https://www.researchgate.net/publication/382246928" target="_blank" rel="noopener">Latent Factor Structure of Ten Models of the Hospital Anxiety and Depression Scale (HADS) in a Sample of Young Ecuadorian Adults</a>
+          </span>
+          <span class="pub-authors"><span class="pub-me">Arias-Medina, P.</span>, &amp; Lima-Castro, S.</span><br>
+          <span class="pub-venue">Revista Iberoamericana de Diagnóstico y Evaluación Psicológica, 2(72), 191–204.</span>
+        </div>
+
+        <div class="pub-item">
+          <span class="pub-title">
+            <a href="https://www.researchgate.net/publication/378096896" target="_blank" rel="noopener">El inventario de funcionamiento ejecutivo para niños (CHEXI): evidencia psicométrica en una muestra de escolares ecuatorianos</a>
+          </span>
+          <span class="pub-authors">Tacuri-Reino, D., Bernal-Arellano, W.M., &amp; <span class="pub-me">Arias-Medina, W.P.</span></span><br>
+          <span class="pub-venue">Avances en Psicología, 32(1).</span>
+        </div>
+      </div>
+
+      <!-- 2023 -->
+      <div class="pub-year-group">
+        <div class="pub-year-label">2023</div>
+
+        <div class="pub-item">
+          <span class="pub-title">
+            <a href="https://www.researchgate.net/publication/377091702" target="_blank" rel="noopener">Propiedades psicométricas de las escalas de Actitudes Emprendedoras para Estudiantes y de Inteligencia Emocional de Wong y Law en una muestra de universitarios ecuatorianos</a>
+          </span>
+          <span class="pub-authors">Ortíz-Ochoa, W., Tacuri-Reino, D., <span class="pub-me">Arias-Medina, P.</span>, &amp; Domínguez-Gómez, M.</span><br>
+          <span class="pub-venue">Maskana, 14(2), 19–28.</span>
+        </div>
+      </div>
+
+      <!-- 2021 -->
+      <div class="pub-year-group">
+        <div class="pub-year-label">2021</div>
+
+        <div class="pub-item">
+          <span class="pub-title">
+            <a href="https://www.researchgate.net/publication/355133826" target="_blank" rel="noopener">Factor structure, measurement invariance and psychometric properties of the Quality of Life Scale WHOQOL-BREF in the Ecuadorian context</a>
+          </span>
+          <span class="pub-authors">Lima-Castro, S., <span class="pub-me">Arias-Medina, P.</span>, Bueno-Pacheco, A., Peña-Contreras, E., Aguilar-Sizer, M., &amp; Cabrera-Vélez, M.</span><br>
+          <span class="pub-venue">Psicologia: Reflexão e Crítica, 34(1), 29.</span>
+        </div>
+
+        <div class="pub-item">
+          <span class="pub-title">
+            <a href="https://www.researchgate.net/publication/353521653" target="_blank" rel="noopener">Propiedades Psicométricas de la Versión en Español del Test de Compromiso con la Vida en Personas con Discapacidad Física</a>
+          </span>
+          <span class="pub-authors">Lima-Castro, S., <span class="pub-me">Arias-Medina, P.</span>, Blanco, V., &amp; Vázquez, F.L.</span><br>
+          <span class="pub-venue">Revista Iberoamericana de Diagnóstico y Evaluación Psicológica, 60(3), 15–26.</span>
+        </div>
+
+        <div class="pub-item">
+          <span class="pub-title">
+            <a href="https://www.researchgate.net/publication/348310602" target="_blank" rel="noopener">Propiedades Psicométricas del Cuestionario de Apoyo Social Funcional Duke-UNK-11 en una Muestra de Adultos Ecuatorianos</a>
+          </span>
+          <span class="pub-authors">Aguilar-Sizer, M., Lima-Castro, S., <span class="pub-me">Arias-Medina, P.</span>, Peña-Contreras, E., Cabrera-Vélez, M., &amp; Bueno-Pacheco, A.</span><br>
+          <span class="pub-venue">Revista Eureka, 18(1), 55–71.</span>
+        </div>
+
+        <div class="pub-item">
+          <span class="pub-title">
+            <a href="https://www.researchgate.net/publication/357317028" target="_blank" rel="noopener">Teletrabajo, trabajo no remunerado y violencia de género en el Ecuador durante la pandemia por COVID-19</a>
+          </span>
+          <span class="pub-authors">Peña-Contreras, E., Calderón, M.C., <span class="pub-me">Arias-Medina, P.</span>, &amp; Sacaquirin, C.</span><br>
+          <span class="pub-venue">Maskana, 12(2), 11–18.</span>
+        </div>
+
+        <div class="pub-item">
+          <span class="pub-title">
+            <a href="https://www.researchgate.net/publication/367404775" target="_blank" rel="noopener">Calidad de vida y variables asociadas: Reflexiones, concepciones teóricas y los desafíos de su evaluación</a>
+            <span class="badge badge-book">Libro / Book</span>
+          </span>
+          <span class="pub-authors">Lima-Castro, S., Bueno-Pacheco, A., <span class="pub-me">Arias-Medina, P.</span>, Aguilar-Sizer, M., Cabrera-Vélez, M., Cordero-Hermida, F., Peña-Contreras, E., &amp; Racines, D.</span><br>
+          <span class="pub-venue">Casa Editora, Universidad del Azuay. ISBN: 978-9942-822-66-6.</span>
+        </div>
+      </div>
+
+      <!-- 2020 -->
+      <div class="pub-year-group">
+        <div class="pub-year-label">2020</div>
+
+        <div class="pub-item">
+          <span class="pub-title">
+            <a href="https://www.researchgate.net/publication/343674890" target="_blank" rel="noopener">Estructura Factorial, Invarianza y Propiedades Psicométricas de la Escala de Autoestima de Rosenberg en el Contexto Ecuatoriano</a>
+            <span class="badge badge-cited">99 citas / citations</span>
+          </span>
+          <span class="pub-authors">Bueno-Pacheco, A., Lima-Castro, S., <span class="pub-me">Arias-Medina, P.</span>, Peña-Contreras, E., Aguilar-Sizer, M., &amp; Cabrera-Vélez, M.</span><br>
+          <span class="pub-venue">Revista Iberoamericana de Diagnóstico y Evaluación Psicológica, 3(56), 87–100.</span>
+        </div>
+
+        <div class="pub-item">
+          <span class="pub-title">
+            <a href="https://www.researchgate.net/publication/347986754" target="_blank" rel="noopener">Propiedades Psicométricas de la Escala Breve de Resiliencia (BRS) en el Contexto Ecuatoriano</a>
+          </span>
+          <span class="pub-authors">Peña-Contreras, E., Lima-Castro, S., <span class="pub-me">Arias-Medina, P.</span>, Bueno-Pacheco, A., Aguilar-Sizer, M., &amp; Cabrera-Vélez, M.</span><br>
+          <span class="pub-venue">Revista Evaluar, 20(3), 83–98.</span>
+        </div>
+
+        <div class="pub-item">
+          <span class="pub-title">
+            <a href="https://www.researchgate.net/publication/344423433" target="_blank" rel="noopener">What Money Can't Buy: Educational Aspirations and International Migration in Ecuador</a>
+          </span>
+          <span class="pub-authors"><span class="pub-me">Arias-Medina, P.</span>, &amp; Rivera, M.J.</span><br>
+          <span class="pub-venue">Migration Letters, 17(5), 681–693. doi: 10.33182/ml.v17i5.1002</span>
+        </div>
+
+        <div class="pub-item">
+          <span class="pub-title">
+            Evaluación de la calidad de los Servicios Públicos del Desarrollo Infantil Integral MIES – Universidad de Cuenca
+            <span class="badge badge-book">Libro / Book</span>
+          </span>
+          <span class="pub-authors"><span class="pub-me">Arias-Medina, W.P.</span>, et al.</span><br>
+          <span class="pub-venue">Universidad de Cuenca. SENADI-2021-6008. 2020.</span>
+        </div>
+      </div>
+
+      <!-- 2019 -->
+      <div class="pub-year-group">
+        <div class="pub-year-label">2019</div>
+
+        <div class="pub-item">
+          <span class="pub-title">
+            <a href="https://www.researchgate.net/publication/335243444" target="_blank" rel="noopener">Adaptation and Validation of the Gratitude Questionnaire GQ-6 for the Ecuadorian Context</a>
+          </span>
+          <span class="pub-authors">Cabrera-Vélez, M., Lima-Castro, S., Peña-Contreras, E., Aguilar-Sizer, M., Bueno-Pacheco, A., &amp; <span class="pub-me">Arias-Medina, P.</span></span><br>
+          <span class="pub-venue">Avaliação Psicológica, 18(2), 129–137.</span>
+        </div>
+
+        <div class="pub-item">
+          <span class="pub-title">
+            <a href="https://www.researchgate.net/publication/331424064" target="_blank" rel="noopener">Aproximación a un Modelo de Bienestar en Adultos Ecuatorianos</a>
+          </span>
+          <span class="pub-authors">Lima-Castro, S., Peña-Contreras, E., Aguilar-Sizer, M., Bueno-Pacheco, A., &amp; <span class="pub-me">Arias-Medina, P.</span></span><br>
+          <span class="pub-venue">Revista Iberoamericana de Diagnóstico y Evaluación Psicológica, 51(2), 5–18.</span>
+        </div>
+      </div>
+
+      <!-- 2017 -->
+      <div class="pub-year-group">
+        <div class="pub-year-label">2017</div>
+
+        <div class="pub-item">
+          <span class="pub-title">
+            <a href="https://www.researchgate.net/publication/321087371" target="_blank" rel="noopener">Fiabilidad y validez de la Escala del Contínuum de Salud Mental (MHC–SF) en el contexto ecuatoriano</a>
+          </span>
+          <span class="pub-authors">Peña-Contreras, E., Lima-Castro, S., Bueno-Pacheco, A., Aguilar-Sizer, M., Keyes, C.L., &amp; <span class="pub-me">Arias-Medina, P.</span></span><br>
+          <span class="pub-venue">Ciencias Psicológicas, 11(2), 223–232.</span>
+        </div>
+
+        <div class="pub-item">
+          <span class="pub-title">Bienestar Subjetivo y Formación de Cuidadores de Adultos Mayores</span>
+          <span class="pub-authors">Bueno-Pacheco, A., Peña-Contreras, E., <span class="pub-me">Arias-Medina, P.</span>, Aguilar-Sizer, M., &amp; Cabrera-Vélez, M.</span><br>
+          <span class="pub-venue">Acción Pedagógica, 26(1), 130–147.</span>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- ── TALKS ── -->
+    <section id="talks" class="section">
+
+      <h2 class="section-heading">
+        <span class="es">Presentaciones y Congresos</span>
+        <span class="en">Talks & Conferences</span>
+      </h2>
+
+      <!-- 2026 -->
+      <p class="section-subheading">2026</p>
+
+      <div class="talk-item">
+        <span class="talk-title">On the understanding of corruption: online and offline data to provide a fuller picture</span>
+        <span class="talk-event">
+          <span class="es">VIII Academia against Corruption in the Americas Conference (ACA) · Ponente</span>
+          <span class="en">VIII Academia against Corruption in the Americas Conference (ACA) · Paper presenter</span>
+        </span><br>
+        <span class="talk-location">
+          <span class="es">15 de abril de 2026 · Quito, Ecuador</span>
+          <span class="en">April 15, 2026 · Quito, Ecuador</span>
+        </span>
+      </div>
+
+      <div class="talk-item">
+        <span class="talk-title">Does ethnicity moderate corruption deals and punishments? Discrimination in cooperative and extortive corruption</span>
+        <span class="talk-event">
+          <span class="es">Bogotá Experimental Economics Conference (BEEC) 2026 · Póster</span>
+          <span class="en">Bogotá Experimental Economics Conference (BEEC) 2026 · Poster</span>
+        </span>
+        <span style="font-size:0.75rem;color:var(--faint);"> [<span class="es">working paper</span><span class="en">working paper</span>]</span><br>
+        <span class="talk-location">
+          <span class="es">15–16 enero 2026 · Pontificia Universidad Javeriana, Bogotá, Colombia</span>
+          <span class="en">January 15–16, 2026 · Pontificia Universidad Javeriana, Bogotá, Colombia</span>
+        </span>
+      </div>
+
+      <!-- 2024 -->
+      <p class="section-subheading">2024</p>
+
+      <div class="talk-item">
+        <span class="talk-title">A cognitive perspective on corruption and its boundaries</span>
+        <span class="talk-event">
+          <span class="es">Interdisciplinary Corruption Research Network (ICRN) · Presentación oral</span>
+          <span class="en">Interdisciplinary Corruption Research Network (ICRN) · Oral presentation</span>
+        </span><br>
+        <span class="talk-location">
+          <span class="es">2024 · Viena, Austria</span>
+          <span class="en">2024 · Vienna, Austria</span>
+        </span>
+      </div>
+
+      <div class="talk-item">
+        <span class="talk-title">A grounded theory of corruption in Ecuador: preliminary results from 3 major cities</span>
+        <span class="talk-event">
+          <span class="es">Interdisciplinary Corruption Research Network (ICRN) · con Chapa, T. · Presentación oral</span>
+          <span class="en">Interdisciplinary Corruption Research Network (ICRN) · with Chapa, T. · Oral presentation</span>
+        </span><br>
+        <span class="talk-location">
+          <span class="es">2024 · Lisboa, Portugal</span>
+          <span class="en">2024 · Lisbon, Portugal</span>
+        </span>
+      </div>
+
+      <div class="talk-item">
+        <span class="talk-title">
+          <span class="es">Salud mental con pandemia: un estudio de la invarianza de medición</span>
+          <span class="en">Mental health during the pandemic: a study of measurement invariance</span>
+        </span>
+        <span class="talk-event">ONE-HEALTH Symposium</span><br>
+        <span class="talk-location">
+          <span class="es">2024 · Quito, Ecuador</span>
+          <span class="en">2024 · Quito, Ecuador</span>
+        </span>
+      </div>
+
+      <!-- 2021 -->
+      <p class="section-subheading">2021</p>
+
+      <div class="talk-item">
+        <span class="talk-title">Structural validity of an instrument for the evaluation of Irlen Syndrome</span>
+        <span class="talk-event">
+          <span class="es">XV International Symposium of Psycholinguistics · con Bernal-Arellano, M. &amp; Tacuri, D.</span>
+          <span class="en">XV International Symposium of Psycholinguistics · with Bernal-Arellano, M. &amp; Tacuri, D.</span>
+        </span><br>
+        <span class="talk-location">
+          <span class="es">Junio 2021</span>
+          <span class="en">June 2021</span>
+        </span>
+      </div>
+
+      <!-- 2019 -->
+      <p class="section-subheading">2019</p>
+
+      <div class="talk-item">
+        <span class="talk-title">
+          <span class="es">Examinando la agenda de desarrollo de tres países andinos usando análisis cuantitativo de textos</span>
+          <span class="en">Examining the development agenda of three Andean countries using quantitative text analysis</span>
+        </span>
+        <span class="talk-award">🏆 <span class="es">Premio al mejor póster</span><span class="en">Best poster award</span></span><br>
+        <span class="talk-event">
+          <span class="es">VII Congreso REDU · Póster de investigación</span>
+          <span class="en">VII REDU Congress · Research poster</span>
+        </span><br>
+        <span class="talk-location">
+          <span class="es">Noviembre 2019 · Ibarra, Ecuador</span>
+          <span class="en">November 2019 · Ibarra, Ecuador</span>
+        </span>
+      </div>
+
+      <!-- 2018 -->
+      <p class="section-subheading">2018</p>
+
+      <div class="talk-item">
+        <span class="talk-title">
+          <span class="es">Las aspiraciones educativas en contextos de migración internacional: una aplicación de métodos mixtos</span>
+          <span class="en">Educational aspirations in international migration contexts: a mixed methods application</span>
+        </span>
+        <span class="talk-event">
+          <span class="es">VI Encuentro Latinoamericano de Metodología de las Ciencias Sociales (ELMeCS)</span>
+          <span class="en">VI Latin American Meeting on Social Science Methodology (ELMeCS)</span>
+        </span><br>
+        <span class="talk-location">
+          <span class="es">Noviembre 2018 · Cuenca, Ecuador</span>
+          <span class="en">November 2018 · Cuenca, Ecuador</span>
+        </span>
+      </div>
+
+      <div class="talk-item">
+        <span class="talk-title">The educational aspirations and expectations of children of transnational families</span>
+        <span class="talk-event">
+          <span class="es">Simposio internacional: <em>Exploring New Links Between Transnational Migration and Education</em></span>
+          <span class="en">International symposium: <em>Exploring New Links Between Transnational Migration and Education</em></span>
+        </span><br>
+        <span class="talk-location">
+          <span class="es">Junio 2018 · Amberes, Bélgica</span>
+          <span class="en">June 2018 · Antwerp, Belgium</span>
+        </span>
+      </div>
+
+      <div class="talk-item">
+        <span class="talk-title">
+          <span class="es">Póster de investigación: patrones alimentarios y factores socioeconómicos</span>
+          <span class="en">Research poster: dietary patterns and socioeconomic factors</span>
+        </span>
+        <span class="talk-event">
+          <span class="es">XVIII Congreso Latinoamericano de Nutrición · con Ochoa-Avilés, A. et al.</span>
+          <span class="en">XVIII Latin American Nutrition Congress · with Ochoa-Avilés, A. et al.</span>
+        </span><br>
+        <span class="talk-location">
+          <span class="es">Noviembre 2018 · Guadalajara, México</span>
+          <span class="en">November 2018 · Guadalajara, Mexico</span>
+        </span>
+      </div>
+
+      <!-- 2017 -->
+      <p class="section-subheading">2017</p>
+
+      <div class="talk-item">
+        <span class="talk-title">
+          <span class="es">La migración y el cambio cultural en el cantón Sigsig, Ecuador</span>
+          <span class="en">Migration and cultural change in Sigsig canton, Ecuador</span>
+        </span>
+        <span class="talk-event">
+          <span class="es">V Congreso REDU · con Pesántez, B.</span>
+          <span class="en">V REDU Congress · with Pesántez, B.</span>
+        </span><br>
+        <span class="talk-location">
+          <span class="es">Octubre 2017 · Cuenca, Ecuador</span>
+          <span class="en">October 2017 · Cuenca, Ecuador</span>
+        </span>
+      </div>
+
+    </section>
+
+    <!-- ── TEACHING ── -->
+    <section id="teaching" class="section">
+
+      <h2 class="section-heading">
+        <span class="es">Docencia</span>
+        <span class="en">Teaching</span>
+      </h2>
+
+      <p style="font-size:0.85rem;color:var(--muted);margin-bottom:1.5rem;">
+        <span class="es">Profesor titular desde septiembre de 2016, Universidad de Cuenca.</span>
+        <span class="en">Full-time professor since September 2016, Universidad de Cuenca.</span>
+      </p>
+
+      <div class="teaching-block">
+        <div class="teaching-institution">
+          <span class="es">Facultad de Psicología · Universidad de Cuenca</span>
+          <span class="en">Faculty of Psychology · Universidad de Cuenca</span>
+        </div>
+        <div class="course-item">
+          <span class="course-name">Estadística / Statistics</span>
+          <span class="course-dept">
+            <span class="es">Pregrado · Facultad de Psicología</span>
+            <span class="en">Undergraduate · Faculty of Psychology</span>
+          </span>
+        </div>
+        <div class="course-item">
+          <span class="course-name">
+            <span class="es">Metodología de la Investigación</span>
+            <span class="en">Research Methodology</span>
+          </span>
+          <span class="course-dept">
+            <span class="es">Pregrado · Facultad de Psicología</span>
+            <span class="en">Undergraduate · Faculty of Psychology</span>
+          </span>
+        </div>
+        <div class="course-item">
+          <span class="course-name">
+            <span class="es">Métodos observacionales y correlacionales</span>
+            <span class="en">Observational and correlational methods</span>
+          </span>
+          <span class="course-dept">
+            <span class="es">Programa de Honores (en inglés)</span>
+            <span class="en">Honours Programme (in English)</span>
+          </span>
+        </div>
+        <div class="course-item">
+          <span class="course-name">Estadística / Statistics</span>
+          <span class="course-dept">
+            <span class="es">Maestría en Psicología</span>
+            <span class="en">Master's in Psychology</span>
+          </span>
+        </div>
+      </div>
+
+      <div class="teaching-block">
+        <div class="teaching-institution">
+          <span class="es">Facultad de Economía · Universidad de Cuenca</span>
+          <span class="en">Faculty of Economics · Universidad de Cuenca</span>
+        </div>
+        <div class="course-item">
+          <span class="course-name">
+            <span class="es">Teorías del Desarrollo</span>
+            <span class="en">Development Theories</span>
+          </span>
+          <span class="course-dept">
+            <span class="es">Pregrado · Facultad de Economía</span>
+            <span class="en">Undergraduate · Faculty of Economics</span>
+          </span>
+        </div>
+        <div class="course-item">
+          <span class="course-name">Macroeconomía / Macroeconomics</span>
+          <span class="course-dept">
+            <span class="es">Pregrado · Facultad de Economía</span>
+            <span class="en">Undergraduate · Faculty of Economics</span>
+          </span>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- ── CV ── -->
+    <section id="cv" class="section">
+
+      <h2 class="section-heading">CV</h2>
+
+      <a href="#" class="cv-download" style="pointer-events:none;opacity:0.5;" title="Próximamente / Coming soon">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+        <span class="es">Descargar CV completo (PDF)</span>
+        <span class="en">Download full CV (PDF)</span>
+        <span style="font-size:0.72rem;font-weight:400;opacity:0.7;"> — <span class="es">próximamente</span><span class="en">coming soon</span></span>
+      </a>
+
+      <!-- Education -->
+      <p class="section-subheading">
+        <span class="es">Formación académica</span>
+        <span class="en">Education</span>
+      </p>
+      <div class="cv-section">
+        <div class="cv-item">
+          <span class="cv-year">2019–<span class="es">pres.</span><span class="en">pres.</span></span>
+          <div class="cv-details">
+            <strong>
+              <span class="es">Candidato a Doctor (PhD)</span>
+              <span class="en">PhD Candidate</span>
+            </strong>
+            <span>KU Leuven · Behavioural Engineering &amp; Economics (BEE) · <span class="es">Bélgica</span><span class="en">Belgium</span></span>
+          </div>
+        </div>
+        <div class="cv-item">
+          <span class="cv-year">2015–2016</span>
+          <div class="cv-details">
+            <strong>
+              <span class="es">Máster en Estudios de Desarrollo</span>
+              <span class="en">Master in Development Studies</span>
+            </strong>
+            <span>Universiteit Antwerpen · <span class="es">Bélgica · Gran distinción</span><span class="en">Belgium · With great distinction</span></span>
+          </div>
+        </div>
+        <div class="cv-item">
+          <span class="cv-year">
+            <span class="es">s/f</span>
+            <span class="en">n/d</span>
+          </span>
+          <div class="cv-details">
+            <strong>
+              <span class="es">Especialización en Gestión de Riesgos</span>
+              <span class="en">Specialisation in Risk Management</span>
+            </strong>
+            <span>TEC Monterrey · <span class="es">México</span><span class="en">Mexico</span></span>
+          </div>
+        </div>
+        <div class="cv-item">
+          <span class="cv-year"></span>
+          <div class="cv-details">
+            <strong>
+              <span class="es">Economista</span>
+              <span class="en">Economist (B.Sc.)</span>
+            </strong>
+            <span>Universidad de Cuenca · Ecuador</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Academic positions -->
+      <p class="section-subheading">
+        <span class="es">Cargos académicos</span>
+        <span class="en">Academic positions</span>
+      </p>
+      <div class="cv-section">
+        <div class="cv-item">
+          <span class="cv-year">2022–2027</span>
+          <div class="cv-details">
+            <strong>
+              <span class="es">Director, Proyecto CIRCLE</span>
+              <span class="en">Director, CIRCLE Project</span>
+            </strong>
+            <span>
+              <span class="es">Programa VLIR-UOS TEAM · Universidad de Cuenca / KU Leuven / UGent</span>
+              <span class="en">VLIR-UOS TEAM Programme · Universidad de Cuenca / KU Leuven / UGent</span>
+            </span>
+          </div>
+        </div>
+        <div class="cv-item">
+          <span class="cv-year">2016–<span class="es">pres.</span><span class="en">pres.</span></span>
+          <div class="cv-details">
+            <strong>
+              <span class="es">Profesor Titular · Facultad de Psicología</span>
+              <span class="en">Associate Professor · Faculty of Psychology</span>
+            </strong>
+            <span>Universidad de Cuenca · Ecuador</span>
+          </div>
+        </div>
+        <div class="cv-item">
+          <span class="cv-year">2019</span>
+          <div class="cv-details">
+            <strong>Visiting Fellow</strong>
+            <span>KU Leuven · <span class="es">enero–febrero 2019</span><span class="en">January–February 2019</span></span>
+          </div>
+        </div>
+        <div class="cv-item">
+          <span class="cv-year">2014–2015</span>
+          <div class="cv-details">
+            <strong>
+              <span class="es">Analista de Riesgos</span>
+              <span class="en">Risk Analyst</span>
+            </strong>
+            <span>Mutualista Azuay · Ecuador</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Awards -->
+      <p class="section-subheading">
+        <span class="es">Reconocimientos</span>
+        <span class="en">Awards & Recognition</span>
+      </p>
+      <div class="cv-section">
+        <div class="award-item">
+          <span class="es">Premio al mejor póster de investigación · VII Congreso REDU · Ibarra, Ecuador · 2019</span>
+          <span class="en">Best research poster award · VII REDU Congress · Ibarra, Ecuador · 2019</span>
+        </div>
+        <div class="award-item">
+          <span class="es">Visiting Fellow · KU Leuven · enero–febrero 2019</span>
+          <span class="en">Visiting Fellow · KU Leuven · January–February 2019</span>
+        </div>
+        <div class="award-item">
+          <span class="es">Becario VLIR-UOS · Máster en Estudios de Desarrollo · 2015–2016</span>
+          <span class="en">VLIR-UOS scholarship recipient · Master in Development Studies · 2015–2016</span>
+        </div>
+      </div>
+
+      <!-- Software -->
+      <p class="section-subheading">
+        <span class="es">Software estadístico</span>
+        <span class="en">Statistical software</span>
+      </p>
+      <div class="skills-row">
+        <span class="skill-tag">R</span>
+        <span class="skill-tag">SPSS</span>
+        <span class="skill-tag">STATA</span>
+        <span class="skill-tag">ATLASti</span>
+      </div>
+
+    </section>
+
+  </main>
+</div>
+
+<script src="js/main.js"></script>
+</body>
+</html>
