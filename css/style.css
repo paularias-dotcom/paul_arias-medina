@@ -635,3 +635,7 @@ body.lang-en span.es { display: none; }
   padding-top: 1.5rem;
   border-top: 1px solid var(--border);
 }
+
+/* ── Additional badge types ── */
+.badge-review  { background: #E8F0FE; color: #1a56a0; border: 1px solid #bdd0f5; }
+.badge-wip     { background: #F0F0F0; color: #555;    border: 1px solid #ccc; }
